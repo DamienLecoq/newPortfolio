@@ -1,0 +1,158 @@
+body{
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#header{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 8%;
+    display: flex;
+    justify-content: center;
+}
+
+#headerLeft h3, #headerRight .clock span{
+    font-weight: normal;
+    font-size: 20px;
+}
+
+#headerLeft{
+    position: relative;
+    width: 47%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: black;
+    gap: 30px;
+}
+
+#headerRight{
+    position: relative;
+    width: 47%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+
+#headerRight i{
+    font-size: 20px;
+    gap: 20px;
+}
+
+.fa-wifi{
+    margin-left: 20px;
+}
+
+#projectSlider {
+    width: 95%;
+    overflow: hidden;
+    position: absolute;
+    bottom: 5%;
+    height: 20%;
+}
+
+#projectSlider h3{
+    margin-left: 20px;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+#slideWrapper {
+    bottom: 0;
+    left: 0;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.slide {
+    width: 250px;
+    height: auto;
+    margin: 0 10px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.25s;
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+
+}
+
+.slide:nth-child(1){
+    opacity:1;
+    transform: translate(0px);
+}
+
+.slide:nth-child(2){
+    opacity:0.7;
+    transform: translateX(300px);
+}
+
+.slide:nth-child(3){
+    opacity:0.7;
+    transform: translateX(600px);
+}
+
+.slide:nth-child(4){
+    opacity:0.5;
+    transform: translateX(900px);
+}
+
+.slide:nth-child(5){
+    opacity:0.5;
+    transform: translateX(1200px);
+}
+
+.slide:nth-child(6){
+    opacity:0;
+    transform: translateX(1500px);
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: 0.25s;
+}
+
+#projectRetex{
+    width: 100%;
+    height: 100%;
+}
+
+#projectTitle{
+    position: absolute;
+    width: 400px;
+    height: 600px;
+    left: 10%;
+    top: 50%;
+    transform: translate(-20%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#projectCompetences{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    height: 20%;
+}
+
+.competence{
+    width: 50px;
+    height: 50px;
+    background-color: yellow;
+    border-radius: 50%;
+}

@@ -4,6 +4,13 @@ body{
     overflow: hidden;
 }
 
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
 #header{
     position: absolute;
     top: 0;
@@ -153,6 +160,5 @@ body{
 .competence{
     width: 50px;
     height: 50px;
-    background-color: yellow;
     border-radius: 50%;
 }
